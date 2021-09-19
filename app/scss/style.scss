@@ -3,7 +3,34 @@
 @import 'reset';
 @import 'global';
 
+.header{
+    padding: 50px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
+.menu{
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item:not(:last-child){
+        margin-left: 32px;
+    }
+    &__link{
+        font-size: 15px;
+        color: $accent-color;
+        border-bottom: 1px solid transparent;
+        transition: border-color .3s;
+        &:hover{
+            border-color: $accent-color;
+        }
+    }
+}
 
 
 
